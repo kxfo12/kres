@@ -11,16 +11,21 @@
         <Button Height="70" Click="Poprzedni">
             <Image Source="obraz3.png"></Image>
         </Button>
-        <StackPanel Width="607" Orientation="Horizontal">
-            <Image Height="200" Source="obraz.png" Margin="20,0,0,150"/>
-            <TextBlock x:Name="nazwa"/>
-            <TextBlock x:Name="opis"/>
-            <TextBlock x:Name="liczbaOfiar"/>
-            <TextBlock x:Name="rok"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock x:Name="iloscOczekujacych"></TextBlock>
-            <Button></Button>
+        <StackPanel>
+            <StackPanel Width="607" Orientation="Horizontal">
+                <Image Height="200" Source="obraz.png" Margin="20,0,0,150"/>
+                <TextBlock x:Name="nazwa" Margin="30,60,0,0" FontSize="36">nazwa</TextBlock>
+                <TextBlock x:Name="opis" TextWrapping="Wrap" Width="200" FontSize="20" Margin="15,75,0,0">opis</TextBlock>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>Przewidywana liczba ofiar:</TextBlock>
+                <TextBlock x:Name="liczbaOfiar"></TextBlock>
+                <TextBlock x:Name="rok"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="iloscOczekujacych"></TextBlock>
+                <Button></Button>
+            </StackPanel>
         </StackPanel>
         <Button Height="70">
             <Image Source="obraz2.png"></Image>
